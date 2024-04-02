@@ -98,7 +98,7 @@ export async function loader() {
 
     // My Created pokemons
     const myPokemonsResponse = await fetch(
-      `https://react-pokedex-420b3-default-rtdb.firebaseio.com/pokemons.json`,
+      import.meta.env.VITE_REACT_APP_FIREBASE_URL,
       {
         method: 'GET',
         header: {

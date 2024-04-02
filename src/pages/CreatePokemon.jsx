@@ -98,7 +98,7 @@ export default function CreatePokemon() {
 
     // Add to firebase realtime
     const response = await fetch(
-      'https://react-pokedex-420b3-default-rtdb.firebaseio.com/pokemons.json',
+      import.meta.env.VITE_REACT_APP_FIREBASE_URL,
       {
         method: 'POST',
         headers: {
